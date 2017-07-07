@@ -1,0 +1,20 @@
+# install-artifactory
+get https://bintray.com/jfrog/artifactory/download_file?file_path=jfrog-artifactory-oss-5.3.2.zip
+unzip download_file?file_path=jfrog-artifactory-oss-5.3.2.zip
+cd artifactory-oss-5.3.2/bin/
+ls
+sudo ./installService.sh
+sudo service artifactory check
+echo $JAVA_HOME
+cd
+cd /etc/opt/jfrog/artifactory/
+cd
+cd /etc/
+ls
+cd opt/
+ls
+cd jfrog/
+cd artifactory/
+sudo nano default [JAVA_HOME=/usr/lib/jvm/java-8-oracle]
+cd
+sudo service artifactory start
